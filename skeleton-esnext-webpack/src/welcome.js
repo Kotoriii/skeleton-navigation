@@ -4,6 +4,7 @@ export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
   firstName = 'John';
   lastName = 'Doe';
+  height = '1.80';
   previousValue = this.fullName;
 
   //Getters can't be directly observed, so they must be dirty checked.
@@ -12,7 +13,7 @@ export class Welcome {
   //as well as the corresponding import above.
   //@computedFrom('firstName', 'lastName')
   get fullName() {
-    return `${this.firstName} ${this.lastName}`;
+    return `${this.firstName} ${this.lastName} ${this.height}`;
   }
 
   submit() {
